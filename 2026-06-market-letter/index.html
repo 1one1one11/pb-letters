@@ -21,6 +21,59 @@
     .keychart-wide{grid-column:1/-1}
     .keychart-tables{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
     @media(max-width:760px){.keychart-grid,.keychart-tables{grid-template-columns:1fr}.keychart figcaption{font-size:13px}}
+
+    @media print{
+      @page{size:A4;margin:13mm 12mm 15mm}
+      html,body{width:210mm;background:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+      body{font-size:13.2px;line-height:1.55;color:#182032}
+      .wrap{width:100%;max-width:none;margin:0;padding:0;background:#fff}
+      .letter{width:100%;background:#fff;box-shadow:none;border:0;border-radius:0;overflow:visible}
+      .topbar{height:5px;margin-bottom:0}
+      header{padding:15mm 0 9mm;border-bottom:1px solid #D8E2F0;background:#fff}
+      .brand-row{margin-bottom:8mm}
+      .date{font-size:11px}
+      .eyebrow{font-size:12px;margin-bottom:4px}
+      h1{font-size:28px;line-height:1.2;letter-spacing:-.05em}
+      .subtitle{font-size:14.2px;line-height:1.55;margin-top:10px;max-width:none}
+      .summary{grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px;break-inside:avoid;page-break-inside:avoid}
+      .summary .card{min-height:0;border-radius:10px;padding:10px 11px}
+      .summary b{font-size:12.5px;margin-bottom:4px}
+      .summary span{font-size:11.3px;line-height:1.45}
+      main{padding:10mm 0 9mm}
+      p{font-size:13.2px;line-height:1.58;margin-bottom:10px;orphans:3;widows:3}
+      .greeting{font-size:13.5px}
+      h2{font-size:18px;line-height:1.25;margin:9mm 0 4mm;break-after:avoid;page-break-after:avoid;color:#062B5F}
+      h3{break-after:avoid;page-break-after:avoid}
+      .lead{font-size:14.5px;line-height:1.5;margin:6mm 0;padding:12px 14px;border-radius:11px;break-inside:avoid;page-break-inside:avoid}
+      .quote{font-size:16px;line-height:1.45;margin:6mm 0;padding:5px 0 5px 12px;break-inside:avoid;page-break-inside:avoid}
+      table,.perf{width:100%;display:table;white-space:normal;border-radius:10px;margin:5mm 0 7mm;break-inside:avoid;page-break-inside:avoid}
+      thead{display:table-header-group}
+      tr{break-inside:avoid;page-break-inside:avoid}
+      .perf th,.perf td{font-size:11.8px;line-height:1.35;padding:7px 8px}
+      .features,.strategy{grid-template-columns:1fr 1fr;gap:8px;margin:5mm 0 7mm;break-inside:avoid;page-break-inside:avoid}
+      .feature,.strategy-card,.ref-card{border-radius:10px;padding:10px;break-inside:avoid;page-break-inside:avoid;box-shadow:none}
+      .feature .num{width:20px;height:20px;font-size:11px;margin-right:5px}
+      .feature strong,.ref-card strong{font-size:12.5px}
+      .feature p,.ref-card p{font-size:11.5px;line-height:1.45;margin-top:5px}
+      .strategy-card h3{font-size:14px;margin-bottom:5px}
+      .strategy-card p{font-size:12.2px;line-height:1.45}
+      .risk-box,.note-box{border-radius:11px;padding:12px 14px;margin:7mm 0;break-inside:avoid;page-break-inside:avoid}
+      .source-list{font-size:11.2px;line-height:1.5}
+      .refs{grid-template-columns:1fr 1fr;gap:8px;margin:5mm 0 8mm;break-inside:auto;page-break-inside:auto}
+      .refs a{font-weight:750;word-break:keep-all;overflow-wrap:anywhere}
+      #reference-links{margin-top:7mm}
+      .keycharts{break-before:page;page-break-before:always;margin-top:0;padding-top:0;border-top:0}
+      .keychart-grid{grid-template-columns:1fr 1fr;gap:8px;margin-top:5mm;break-inside:auto;page-break-inside:auto}
+      .keychart{border-radius:10px;box-shadow:none;break-inside:avoid;page-break-inside:avoid}
+      .keychart-wide{grid-column:1/-1}
+      .keychart img{max-height:175mm;width:100%;object-fit:contain}
+      .keychart:not(.keychart-wide) img{max-height:92mm}
+      .keychart figcaption{font-size:10.8px;line-height:1.35;padding:7px 9px}
+      .closing{margin-top:8mm;padding-top:6mm;break-inside:avoid;page-break-inside:avoid}
+      footer{padding:8mm 0 0;border-top:1px solid #D8E2F0;background:#fff;font-size:10.8px;line-height:1.45;break-inside:avoid;page-break-inside:avoid}
+      .notice{font-size:10.5px;margin-top:5px}
+      .actions{display:none!important}
+    }
   </style>
 </head>
 <body>
