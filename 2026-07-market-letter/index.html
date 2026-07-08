@@ -15,7 +15,7 @@
   <style>
     .source-box{margin:30px 0 8px;border:1px solid var(--line);background:linear-gradient(180deg,#fff,#F8FBFF);border-radius:18px;padding:22px 24px}
     .source-box h2{margin-top:0}.source-box h3{font-size:18px;margin:18px 0 8px;color:#111827}.source-box p{font-size:15.5px;color:#313B4D;margin-bottom:12px}.source-list{font-size:14.5px;line-height:1.75;color:var(--muted)}.source-list a{color:var(--shinhan-blue);font-weight:760}
-    .ref-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.ref-card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px 17px}.ref-card strong{display:block;color:#111827;font-size:15.5px;margin-bottom:7px}.ref-card p{font-size:14px;color:#475467;line-height:1.55;margin:0 0 8px}.ref-card a{color:var(--shinhan-blue);font-weight:760;text-decoration:none}@media(max-width:760px){.ref-grid{grid-template-columns:1fr}}
+    .ref-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}.ref-card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:16px 17px}.ref-card strong{display:block;color:#111827;font-size:15.5px;margin-bottom:7px}.ref-card p{font-size:14px;color:#475467;line-height:1.55;margin:0 0 8px}.ref-card a{color:var(--shinhan-blue);font-weight:760;text-decoration:none}.keycharts{margin:30px 0 8px;padding:24px;border:1px solid var(--line);background:#fff;border-radius:18px}.keycharts h2{margin-top:0}.keychart-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}.metric{border:1px solid #DDE8F6;border-radius:12px;padding:12px 14px;background:#F8FBFF}.metric b{display:block;font-size:12px;color:var(--muted);margin-bottom:4px}.metric span{font-weight:800;color:var(--shinhan-blue)}.heat-note{font-size:14px;color:#7A4B18;background:#FFF8EC;border:1px solid #F0D6A8;border-radius:12px;padding:12px 14px;margin:12px 0}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:#fff;margin:14px 0}.heat-table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:650px}.heat-table th,.heat-table td{padding:9px 10px;border-bottom:1px solid #E8EEF7;text-align:right;white-space:nowrap}.heat-table th:first-child,.heat-table td:first-child{text-align:left}.heat-table th{background:#F2F6FC;color:#334155;font-weight:800}.heat-table tr:last-child td{border-bottom:0}.heat{background:#FCE1E7;color:#B42318;font-weight:800}.keychart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}.keychart{margin:0;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden}.keychart img{display:block;width:100%;height:auto;background:#fff}.keychart figcaption{font-size:13.5px;color:var(--muted);padding:10px 14px;border-top:1px solid var(--line)}.keychart-wide{grid-column:1/-1}@media(max-width:760px){.ref-grid,.keychart-grid{grid-template-columns:1fr}.keychart-metrics{grid-template-columns:repeat(2,1fr)}}
   </style>
 </head>
 <body>
@@ -93,6 +93,51 @@
             <div class="ref-card"><strong>그릇</strong><p>상승장과 조정장에서 내 그릇에 맞는 대응을 이어가는 관점입니다.</p><a href="https://blog.naver.com/pillion21/224336949824" target="_blank" rel="noopener">알바트로스: 그릇 3</a></div>
             <div class="ref-card"><strong>사이클 점검</strong><p>기술혁명과 금융자본의 관점에서 지금 사이클의 위치를 생각해보는 글입니다.</p><a href="https://blog.naver.com/arsjj/224337420187" target="_blank" rel="noopener">골프와 가치투자: 사이클의 어디쯤?</a></div>
             <div class="ref-card"><strong>주간 시장 생각</strong><p>7월 2주차 시장 흐름과 투자 아이디어를 함께 살펴볼 수 있는 참고 글입니다.</p><a href="https://blog.naver.com/audistar/224337380368" target="_blank" rel="noopener">콤디티: 7월 2주차 주식 생각</a></div>
+          </div>
+        </section>
+
+        <section class="keycharts" aria-label="KEY CHART">
+          <h2>KEY CHART</h2>
+          <p>시장 과열 여부와 투자자 심리를 함께 보기 위해 참고할 수 있는 신용잔고, 예탁금, 거래대금 관련 지표입니다.</p>
+          <h3>거래대금·신용융자 과열 체크</h3>
+          <div class="keychart-metrics" aria-label="최근 시장 지표">
+            <div class="metric"><b>최근 거래대금</b><span>70.2조원</span></div>
+            <div class="metric"><b>신용융자잔고</b><span>37.7조원</span></div>
+            <div class="metric"><b>거래대금/코스피</b><span>1.07%</span></div>
+            <div class="metric"><b>코스피</b><span>7,656p</span></div>
+          </div>
+          <p class="heat-note">신용융자잔고는 2026-07-07 표에서 0.0조원으로 표시되어 직전 확인치인 2026-07-06 기준 37.7조원을 함께 참고했습니다. 붉은 음영은 원본 표에서 과열 체크로 표시된 구간입니다.</p>
+          <div class="table-wrap">
+            <table class="heat-table" aria-label="거래대금 신용융자 과열 체크 표">
+              <thead><tr><th>날짜</th><th>총거래대금</th><th>신용융자잔고</th><th>거래대금/코스피</th><th>코스피</th></tr></thead>
+              <tbody>
+                <tr><td>2026-07-07</td><td><b>70.2</b>조원</td><td>미집계</td><td>1.07%</td><td>7,656</td></tr>
+                <tr><td>2026-07-06</td><td><b>56.9</b>조원</td><td>37.7조원</td><td>0.83%</td><td>8,051</td></tr>
+                <tr><td>2026-07-03</td><td><b>79.2</b>조원</td><td>37.8조원</td><td>1.15%</td><td>8,088</td></tr>
+                <tr><td>2026-07-02</td><td><b>88.8</b>조원</td><td>37.7조원</td><td class="heat">1.35%</td><td>7,648</td></tr>
+                <tr><td>2026-07-01</td><td><b>73.7</b>조원</td><td>37.3조원</td><td>1.04%</td><td>8,303</td></tr>
+                <tr><td>2026-06-30</td><td><b>72.5</b>조원</td><td>37.3조원</td><td>1.00%</td><td>8,476</td></tr>
+                <tr><td>2026-06-29</td><td>74.1조원</td><td>37.8조원</td><td>1.03%</td><td>8,395</td></tr>
+                <tr><td>2026-06-26</td><td>94.7조원</td><td>37.8조원</td><td>1.32%</td><td>8,411</td></tr>
+                <tr><td>2026-06-25</td><td>94.4조원</td><td>38.0조원</td><td>1.24%</td><td>8,930</td></tr>
+                <tr><td>2026-06-24</td><td>102.4조원</td><td>38.6조원</td><td class="heat">1.41%</td><td>8,471</td></tr>
+                <tr><td>2026-06-23</td><td>118.8조원</td><td>38.1조원</td><td class="heat">1.69%</td><td>8,204</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="keychart-grid">
+            <figure class="keychart keychart-wide">
+              <img src="assets/keycharts/market-indicators-2026-07.png" alt="시장 주요 지표: 외국인 지분율, 총거래대금, 신용융자잔고, 예탁금, 코스피, 코스닥 추이">
+              <figcaption>시장 주요 지표: 외국인 지분율, 총거래대금, 신용융자잔고, 예탁금, 코스피·코스닥 흐름</figcaption>
+            </figure>
+            <figure class="keychart">
+              <img src="assets/keycharts/trading-value-market-cap-2026-07.png" alt="거래대금 나누기 시가총액과 코스피 추이">
+              <figcaption>거래대금 / 시가총액 비율과 코스피 추이</figcaption>
+            </figure>
+            <figure class="keychart">
+              <img src="assets/keycharts/trading-credit-kospi-2026-07.png" alt="총거래대금, 신용융자잔고, 코스피 추이">
+              <figcaption>총거래대금, 신용융자잔고, 코스피 추이</figcaption>
+            </figure>
           </div>
         </section>
 
